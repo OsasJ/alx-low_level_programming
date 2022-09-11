@@ -1,23 +1,32 @@
 #include <stdio.h>
 /**
- * main - printing numbers from 0-9 with commas and space between them
- * Description: using the main function
- * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+ * main - program that prints all possible different combinations of 2 digits
  * Return: 0
  */
 int main(void)
 {
-	int c;
+	int c = 0;
+	int f_d;
+	int l_d;
 
-	for (c = 48; c <= 57; c++)
+	while (c <= 99)
 	{
-		putchar(c);
-		if (c != 57)
+		f_d = (c / 10 + '0');
+		l_d = (c % 10 + '0');
+
+		if (f_d < l_d)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(f_d);
+			putchar(l_d);
+
+			if (c != 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
+		c++;
 	}
-	putchar('\n');
-	return (0);
-}	
+putchar('\n');
+return (0);
+}
