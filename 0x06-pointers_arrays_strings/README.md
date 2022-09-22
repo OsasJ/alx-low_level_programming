@@ -12,6 +12,8 @@ File 5-string_toupper.c is a function that changes all lowercase letters of a st
 
 File 6-cap_string.c is a function that capitalizes all words of a string.
 
+File 7-leet.c encodes a string in 1337
+
 File _putchar.c is a function that replaces the standard library function putchar().
 
 File main.h is the header file containing all the function prototypes.
