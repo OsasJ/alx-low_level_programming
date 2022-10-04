@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 		{
 			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
-				puts('"Error");
+				puts("Error");
 				return (1);
 			}
 		}
@@ -80,5 +80,5 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", sum);
-	return (0)
+	return (0);
 }
