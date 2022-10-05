@@ -28,7 +28,7 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	*(p + 1) = '\0';
+	*(p + i) = '\0';
 
 	return (p);
 }
