@@ -5,12 +5,12 @@
  * the operation asked by the user
  * @s: the operator given by the user
  *
- * Return: pointer to the function that corresponds to the 
+ * Return: pointer to the function that corresponds to the
  * operator given as a parameter
  */
 int (*get_op_func(char *s))(int, int)
 {
-	op_t_op[] = {
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
